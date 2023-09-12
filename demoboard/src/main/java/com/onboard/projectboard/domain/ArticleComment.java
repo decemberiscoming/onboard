@@ -21,21 +21,16 @@ import java.util.Objects;
         @Index(columnList="createdBy"),
 })//index 잡을 예정, 본문 검색에는 index를 걸지 않는다.
 
-@EntityListeners(AuditingEntityListener.class)
 @Entity
 
-public class ArticleComment {
+public class ArticleComment extends AuditingFields {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Setter @ManyToOne(optional = false) private Article article; // 게시글 (ID) 연관관계 주기
     @Setter @Column(nullable = false, length = 500) private String content; // 본문
-
-    @CreatedDate @Column(nullable = false) private LocalDateTime createdAt; //생성일시
-    @CreatedBy @Column(nullable = false, length = 100) private String createdBy; // 생성자
-    @LastModifiedDate @Column(nullable = false) private LocalDateTime modifiedAt; //수정일시
-    @LastModifiedBy @Column(nullable = false, length = 100) private String modifiedBy; //수정자
 
 
 
