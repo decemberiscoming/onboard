@@ -1,5 +1,6 @@
 package com.onboard.projectboard.controller;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
@@ -19,6 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 // @WebMvcTest, 슬라이스 형식으로 데이터를 불러오며, 불필요하다고 판단되는 데이터는 읽지 않는다.
+@Disabled("Sprint Data REST 통합테스트는 불필요") //DataRest기능 자체가 무거우므로 테스트용도로만 사용하고, 사용하지 않는 것을 권한다.
 @DisplayName("데이터 REST - Api 테스트")
 @Transactional //데이터에 부담이 가능 테스트이므로 해당 기능 삽입
 @AutoConfigureMockMvc
