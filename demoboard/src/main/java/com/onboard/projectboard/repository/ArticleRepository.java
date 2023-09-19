@@ -38,4 +38,7 @@ public interface ArticleRepository extends
 
 
 }
+<<<<<<< HEAD
+>>>>>>> #12-db-impl
+=======
 >>>>>>> #12-db-impl
