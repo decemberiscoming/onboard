@@ -10,7 +10,7 @@ VALUES
     ('2023-04-11 16:03:06', '2023-05-10 17:37:57', 'UserO', 'UserP', 'Sample content 8', '#hashtag8', 'Sample title 8'),
     ('2023-04-12 17:03:06', '2023-05-11 18:37:57', 'UserQ', 'UserR', 'Sample content 9', '#hashtag9', 'Sample title 9'),
     ('2023-04-13 18:03:06', '2023-05-12 19:37:57', 'UserS', 'UserT', 'Sample content 10', '#hashtag10', 'Sample title 10');
-<<<<<<< HEAD
+
 
 INSERT INTO article_comment (article_id, content, created_by, modified_by, created_at, modified_at)
 VALUES
@@ -35,7 +35,7 @@ VALUES
     (8, 'Random content 19', 'UserH', 'UserI', '2023-05-19 10:05:27', '2023-05-20 11:05:28'),
     (8, 'Random content 20', 'UserJ', 'UserK', '2023-05-20 12:05:29', '2023-05-21 13:05:30');
 
-=======
+
 INSERT INTO article_comment (article_id, created_at, modified_at, created_by, modified_by,  content)
 VALUES
     (1, '2023-04-04 19:03:06', '2023-05-03 09:37:57', 'UserA', 'UserB', 'Sample content 1'),
@@ -52,7 +52,4 @@ VALUES
     (3, '2023-04-11 16:03:06', '2023-05-10 17:37:57', 'UserO', 'UserP', 'Sample content 8'),
     (5, '2023-04-12 17:03:06', '2023-05-11 18:37:57', 'UserQ', 'UserR', 'Sample content 9'),
     (5, '2023-04-13 18:03:06', '2023-05-12 19:37:57', 'UserS', 'UserT', 'Sample content 10');
-<<<<<<< HEAD
->>>>>>> #12-db-impl
-=======
->>>>>>> #12-db-impl
+
