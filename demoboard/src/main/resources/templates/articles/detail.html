@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 페이지</title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+
+        <header id="header">
+            <h1>첫번째 글</h1>
+        </header>
+
+        <aside>
+            <p>Uno</p>
+            <p><a href="mailto:dmdkdk@gmail.com">admin@gmail.com</a></p>
+            <p><time datetime="2022-01-02T00:00:01">2022-01-02</time> </p>
+            <p>#java</p>
+        </aside>
+
+        <section>
+            <p>본문<br><br></p>
+
+            <div>
+                <form>
+                    <label for="articleComment" hidden>댓글</label>
+                    <textarea id="articleComment" placeholder="댓글 쓰기.." rows="3"></textarea>
+                    <button type="submit">쓰기</button>
+                </form>
+
+                <ul>
+                    <li>
+                        <div>
+                            <time><small>2022-01-01</small></time>
+                            <strong>Writer</strong>
+                            <p>
+                                이게 맞는건가, 이렇게 하는거라고?
+                                이거 맞음 한줄 아래임.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time><small>2022-01-01</small></time>
+                            <strong>Writer</strong>
+                            <p>
+                                위에랑은 다르게, 진행을 해보려고 하는데
+                                이렇게 해도 되나?
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <nav>
+                <a href="#">이전 글</a>
+                <a href="#">다음 글</a>
+            </nav>
+
+        </section>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+</html>
