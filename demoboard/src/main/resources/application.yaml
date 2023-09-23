@@ -33,25 +33,17 @@ spring:
   sql:
     init:
       mode: always
-<<<<<<< HEAD
 
 
-  # thymeleaf.cache: false
-  #data.rest:
-  #  base-path: /api
-  #data:
-  #  rest:
-  #   detection-strategy: annotated
+
   data:
     rest:
       base-path: /api
       detection-strategy: annotated
-=======
-#   thymeleaf.cache: false
-  data.rest:
-    base-path: /api
-    detection-strategy: annotated
->>>>>>> #12-db-impl
+  thymeleaf3:
+    decoupled-logic: true
+
+
 
 
 

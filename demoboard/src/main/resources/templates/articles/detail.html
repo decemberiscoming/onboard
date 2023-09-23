@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Bo">
+    <title>게시글 페이지</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main class="container">
+
+        <header id="header" class="py-5 text-center">
+            <h1>첫번째 글</h1>
+        </header>
+
+        <div class="row g-5">
+            <section class="col-md-5 col-lg-4 order-md-last">
+                <aside>
+                    <p><span class="nick-name">writer</span></p>
+                    <p><a class="u-url" rel="me" href="mailto:dmdkdk@gmail.com">admin@gmail.com</a></p>
+                    <p><time datetime="2022-01-02T00:00:01">2022-01-02</time> </p>
+                    <p>#java</p>
+                </aside>
+            </section>
+
+            <article class="col-md-7 col-lg-8">
+                <p>본문<br><br></p>
+            </article>
+        </div>
+
+    <div class="row g-5">
+        <section>
+            <form class="row g-3">
+                <div class="col-8">
+                    <label for="comment-textbox" hidden>댓글</label>
+                    <textarea class="form-control mb-4" id="comment-textbox" placeholder="댓글쓰기" rows="3"></textarea>
+                </div>
+                <div class="col-auto">
+                    <label for="comment-submit" hidden>댓글쓰기</label>
+                    <button class="btn btn-primary" id="comment-submit" type="submit">쓰기</button>
+                </div>
+            </form>
+
+            <ul>
+                <li>
+                    <div>
+                        <time><small>2023-01-01</small></time>
+                        <strong>writer</strong>
+                        <p>
+                            괜히 지워가지고, 다시 써야 하잖아.
+                            미치겠네
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time><small>2023-01-01</small></time>
+                        <strong>writer</strong>
+                        <p>
+                            일일이 하나씩 다 구현해야하네, 진짜 엄청 꼼꼼해야해
+                            환장하네
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link">이전글</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">다음글</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -6,16 +6,12 @@ import com.onboard.projectboard.domain.QArticleComment;
 import com.querydsl.core.types.dsl.DateTimeExpression;
 import com.querydsl.core.types.dsl.StringExpression;
 import org.springframework.data.jpa.repository.JpaRepository;
-<<<<<<< HEAD
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@RepositoryRestResource
-public interface ArticleCommentRepository extends JpaRepository<ArticleComment, Long> {
-=======
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.querydsl.binding.QuerydslBinderCustomizer;
 import org.springframework.data.querydsl.binding.QuerydslBindings;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
 
 @RepositoryRestResource
 public interface ArticleCommentRepository extends
@@ -35,5 +31,4 @@ public interface ArticleCommentRepository extends
         bindings.bind(root.createdBy).first(StringExpression::containsIgnoreCase);
     }
 
->>>>>>> #12-db-impl
 }
