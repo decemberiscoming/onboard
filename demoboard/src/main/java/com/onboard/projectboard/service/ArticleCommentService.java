@@ -1,7 +1,6 @@
 package com.onboard.projectboard.service;
 
 import com.onboard.projectboard.dto.ArticleCommentDto;
-import com.onboard.projectboard.dto.ArticleDto;
 import com.onboard.projectboard.repository.ArticleCommentRepository;
 import com.onboard.projectboard.repository.ArticleRepository;
 import lombok.RequiredArgsConstructor;
@@ -15,14 +14,21 @@ import java.util.List;
 @Service
 public class ArticleCommentService {
 
-    private final ArticleCommentRepository articleCommentRepository;
     private final ArticleRepository articleRepository;
+    private final ArticleCommentRepository articleCommentRepository;
 
     @Transactional(readOnly = true)
-    public List<ArticleCommentDto> searchArticleComment(long articlId) {
+    public List<ArticleCommentDto> searchArticleComments(Long articleId) {
         return List.of();
     }
 
     public void saveArticleComment(ArticleCommentDto dto) {
     }
+
+    public void updateArticleComment(ArticleCommentDto dto) {
+    }
+
+    public void deleteArticleComment(Long articleCommentId) {
+    }
+
 }
